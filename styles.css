@@ -1,0 +1,303 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body::after {
+    content: "";
+    background-image: url('aditya_back.jpg'); /* Replace 'your_background_image.jpg' with the path to your image */
+    background-size: cover; /* Ensure the background image covers the entire viewport */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: -1;   
+  }
+
+#bodyDiv {
+    background-color: rgba(248, 247, 216, 0.7);
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+} */
+/* Default styles for the navigation */
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+#toggle-menu{
+    display: none;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Styles for the menu icon */
+.menu-icon {
+    display: none;
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 600px) {
+    .menu-icon {
+        display: block; /* Display the menu icon for small screens */
+        cursor: pointer; /* Change cursor to pointer */
+    }
+    
+    nav ul {
+        display: none; /* Hide the menu items by default for small screens */
+        flex-direction: column; /* Stack menu items vertically */
+        text-align: center;
+    }
+    
+    nav ul li {
+        margin: 10px 0; /* Add space between stacked menu items */
+    }
+    
+    /* Show the menu items when the checkbox is checked */
+    #toggle-menu:checked + label + nav ul {
+        display: flex;
+    }
+}
+
+
+.content-section {
+    padding: 20px;
+}
+
+/* footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.footer-links li a {
+    color: #fff;
+    text-decoration: none;
+} */
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.external-links {
+    flex: 1;
+    text-align: left;
+}
+
+.linkedin-link {
+    flex: 1;
+    text-align: center;
+}
+
+#link{
+    text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+    .external-links,
+    .linkedin-link {
+        flex-basis: 100%; /* Take up full width on small screens */
+        text-align: center; /* Center align the content */
+        padding-bottom: 10px;
+    }
+    #link{
+        text-align: center;
+    }
+    #round{
+        overflow-x: scroll;
+        scrollbar-color: red orange;
+        scrollbar-width: thin;
+    }
+}
+
+
+
+
+
+
+.external-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.external-links li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.external-links li:last-child {
+    margin-right: 0;
+}
+
+.external-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.linkedin-link {
+    text-align: center;
+}
+
+.linkedin-link a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hob{
+    color: black;
+    text-decoration: none;
+    text-decoration-line: underline;
+}
+
+
+
+
+/* Styles for the table */
+.aditya-table.centered-table {
+    font-family: 'Arial', sans-serif;
+    border-collapse: collapse;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 80%;
+    border: 2px solid #888; /* Monotone border color */
+}
+
+/* Styles for table headings */
+.aditya-table th {
+    background-color: #888; /* Monotone background color */
+    color: #fff;
+    font-weight: bold;
+    padding: 15px;
+    text-align: center;
+    border: 2px solid #888; /* Monotone border color */
+}
+
+/* Styles for table cells */
+.aditya-table td {
+    border: 2px solid #888; /* Monotone border color */
+    padding: 10px;
+    text-align: center;
+}
+
+/* Styles for alternating row colors */
+.aditya-table tbody tr:nth-child(even) {
+    background-color: #ddd; /* Lighter monotone background color */
+}
+
+/* Styles for the caption */
+.caption {
+    font-family: 'Rapscallion', cursive;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #888; /* Monotone color */
+    margin-bottom: 20px; /* Add some space */
+}
+
+/* Styles for the special font */
+.skeletor {
+    font-family: 'Television', cursive;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px;
+    color: #888; /* Monotone color */
+    background-color: #ddd; /* Lighter monotone background color */
+}
+
+
+.profile {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.profile img {
+    border-radius: 50%; /* Creates rounded border for the photo */
+    width: 150px; /* Adjust size as needed */
+    height: 150px;
+    margin-bottom: 10px; /* Add space between photo and name */
+    object-fit: cover;
+}
+
+.profile h2 {
+    margin: 0; /* Remove default margin */
+}
+
+blockquote {
+    text-align: center;
+}
+blockquote p {
+    padding: 20px;
+    background: #eee;
+    border-radius: 5px;
+}
+blockquote p::before {
+    content: '\201C';
+}
+blockquote p::after {
+    content: '\201D';
+}
